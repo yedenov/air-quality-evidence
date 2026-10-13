@@ -1,0 +1,32 @@
+{
+  "project": "air-quality-evidence",
+  "dataStatus": "SYNTHETIC DEMONSTRATION",
+  "input": {
+    "expectedDays": 10,
+    "daily": [
+      8,
+      12,
+      null,
+      24,
+      31,
+      18,
+      null,
+      11,
+      16,
+      20
+    ],
+    "seed": 42
+  },
+  "result": {
+    "observedDays": 8,
+    "missingDays": 2,
+    "coverage": 0.8,
+    "meanUgM3": 17.5,
+    "bootstrap95": [
+      12.875,
+      22.625
+    ],
+    "daysAbove15": 5,
+    "observedFractionAbove15": 0.625
+  }
+}

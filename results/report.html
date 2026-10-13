@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Air Quality Evidence — report</title><style>body{font:17px/1.6 system-ui;margin:48px auto;padding:0 24px;max-width:960px;color:#143143;background:#f4f8fa}h1{font-size:42px;line-height:1.15}strong{color:#985400}pre{background:white;padding:24px;overflow:auto;border:1px solid #cbdde5;border-radius:12px}a{color:#006a83}</style><h1>Air Quality Evidence</h1><strong>SYNTHETIC DEMONSTRATION</strong><p>How does missing daily monitoring change our interpretation of PM2.5 exposure?</p><h2>Method and interpretation</h2><p>Daily means are compared with the WHO 2021 PM2.5 24-hour guideline level of 15 µg/m³. This comparison is descriptive: formal guideline assessment uses the annual 99th percentile. The sample mean is NOT an annual exposure estimate. A seeded IID percentile bootstrap estimates uncertainty in the observed mean; serial correlation and non-random missingness can invalidate this interval.</p><h2>Inputs and results</h2><pre>{
+  "project": "air-quality-evidence",
+  "dataStatus": "SYNTHETIC DEMONSTRATION",
+  "input": {
+    "expectedDays": 10,
+    "daily": [
+      8,
+      12,
+      null,
+      24,
+      31,
+      18,
+      null,
+      11,
+      16,
+      20
+    ],
+    "seed": 42
+  },
+  "result": {
+    "observedDays": 8,
+    "missingDays": 2,
+    "coverage": 0.8,
+    "meanUgM3": 17.5,
+    "bootstrap95": [
+      12.875,
+      22.625
+    ],
+    "daysAbove15": 5,
+    "observedFractionAbove15": 0.625
+  }
+}
+</pre><p>Research prototype • no verified field impact • <a href="https://www.who.int/publications/i/item/9789240034228/">Method reference</a></p></html>
