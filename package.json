@@ -1,0 +1,16 @@
+{
+  "name": "air-quality-evidence",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "How does missing daily monitoring change our interpretation of PM2.5 exposure?",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node cli.mjs data/demo.json results",
+    "analyze": "node cli.mjs"
+  },
+  "license": "MIT"
+}
